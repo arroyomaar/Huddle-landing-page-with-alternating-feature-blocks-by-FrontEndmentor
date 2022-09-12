@@ -1,0 +1,95 @@
+$Pink: hsl(322, 100%, 66%);
+$Very_Pale_Cyan: hsl(193, 100%, 96%);
+$Very_Dark_Cyan: hsl(192, 100%, 9%);
+$Grayish_Blue: hsl(208, 11%, 55%);
+$font_family-1:'Open Sans', sans-serif;
+$font_family-2:'Poppins', sans-serif;
+footer{
+    background-color: $Very_Dark_Cyan;
+    // margin-top: -470px;
+    width: 100%;
+    padding: 120px 20px 50px 20px;
+    color:#fff;
+    font-family: $font_family-1;
+    z-index: -10;
+    position: absolute;
+    bottom: -2450px;
+    @media screen and (min-width: 1440px) {
+        padding: 120px 80px 60px 100px;
+        bottom: -2200px;
+    }
+}
+.logo{
+    width: 120px;
+    height: 20px;
+    margin-bottom: 25px;
+    filter: invert(92%) sepia(57%) saturate(0%) hue-rotate(197deg) brightness(103%) contrast(103%);
+}
+.map{
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 1440px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.contact{
+    margin-bottom: 60px;
+    @media screen and (min-width: 1440px) {
+        width: 360px;
+    }
+}
+.address{
+    text-align: right;
+    @media screen and (min-width: 768px) {
+        width: 350px;
+    }
+}
+.address,.phone,.mail{
+    text-align: left;
+    margin-bottom: 20px;
+    img{
+        width: 15px;
+        margin-right: 20px;
+    }
+    
+}
+.menu-1,.menu-2{
+    ul{
+        list-style-type: none;
+        text-transform: uppercase;
+        li{
+            margin-bottom: 20px;
+            &:hover{
+                padding-bottom: 5px;
+                border-bottom: 1px solid #fff;
+            }
+        }
+    }
+
+}
+.networks{
+    .social{
+        text-align: center;
+        // margin: 0 auto;
+        img{
+            width: 20px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            &:hover{
+                filter: invert(43%) sepia(82%) saturate(1205%) hue-rotate(294deg) brightness(102%) contrast(101%);
+            }
+        }
+    }
+    @media screen and (min-width: 1440px) {
+        width: 260px;
+    }
+}
+.copy{
+    text-align: center;
+    font-size: 12px;
+    @media screen and (min-width: 1440px) {
+        font-size: 10px;
+    }
+}
+

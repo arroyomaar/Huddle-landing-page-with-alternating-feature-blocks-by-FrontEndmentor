@@ -1,0 +1,119 @@
+$Pink: hsl(322, 100%, 66%);
+$Very_Pale_Cyan: hsl(193, 100%, 96%);
+$Very_Dark_Cyan: hsl(192, 100%, 9%);
+$Grayish_Blue: hsl(208, 11%, 55%);
+$font_family-1:'Open Sans', sans-serif;
+$font_family-2:'Poppins', sans-serif;
+main{
+    padding: 60px 20px 200px 20px;
+    // background-color: $Grayish_Blue;
+    font-family: $font_family-1;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 1440px) {
+        padding: 160px 100px 345px 100px;
+    }
+}
+.box{
+    background-color:#ffffff;
+    width: 330px;
+    height: 480px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 3px 16px rgba(0,0,0,0.18);
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding: 60px 30px 35px 30px;
+    margin-bottom: 40px;
+    .text h2{
+        font-family: $font_family-2;
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+    .text p{
+        line-height: 1.2;
+    }
+    .hero {
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1240px) {
+        width: 1240px;
+        height: 445px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding: 50px 50px 50px 115px;
+        .text{
+            width: 480px;
+        }
+        .text h2{
+            font-family: $font_family-2;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+        .text p{
+            line-height: 1.8;
+        }
+        .hero {
+            width: 380px;
+            // margin-left: 150px;
+        }
+    }
+}
+.flowing{
+    @media screen and (min-width: 1440px) {
+        flex-direction: row-reverse;
+    }
+}
+.ready-to-build{
+    width: 330px;
+    margin-top: 120px;
+    height: 180px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 3px 16px rgba(0,0,0,0.18);
+    text-align: center;
+    padding: 45px 25px;
+    background-color: #ffffff;
+    // z-index: -1000;
+    h2{
+        font-family: $font_family-2;
+        font-weight: 600;
+        margin-bottom: 25px;
+        font-size: 16px;
+    }
+    button{
+        font-size: 12px;
+        width: 205px;
+        height: 45px;
+        color: #ffffff;
+        background-color: $Pink;
+        padding: 15px 45px;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+    }
+    @media screen and (min-width: 1440px) {
+        width: 800px;
+        margin-top: 150px;
+        // margin-left: 150px;
+        height: 280px;
+        padding: 80px 125px 50px 125px;
+        h2{
+            margin-bottom: 25px;
+            font-size: 32px;
+        }
+        button{
+            font-size: 18px;
+            width: 400px;
+            height: 75px;
+            padding: 30px 90px;
+        }
+    }
+}

@@ -1,0 +1,103 @@
+$Pink: hsl(322, 100%, 66%);
+$Very_Pale_Cyan: hsl(193, 100%, 96%);
+$Very_Dark_Cyan: hsl(192, 100%, 9%);
+$Grayish_Blue: hsl(208, 11%, 55%);
+$font_family-1:'Open Sans', sans-serif;
+$font_family-2:'Poppins', sans-serif;
+header{
+    font-family: $font_family-1;
+    font-weight: 400;
+    height: 720px;
+    width: 100%;
+    padding: 25px 30px 35px 30px;
+    background-color: $Very_Pale_Cyan;
+    background-image: url(../../../assets/bg-hero-mobile.svg);
+    @media screen and (min-width: 1440px) {
+        padding: 60px 75px 75px 75px;
+        background-image: url(../../../assets/bg-hero-desktop.svg);
+    }
+}
+nav{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    .logo{
+        height: 20px;
+        @media screen and (min-width: 1440px) {
+            height: 30px;
+        }
+    }
+    button{
+        width: 90px;
+        background-color: #ffffff;
+        border: none;
+        border-radius: 25px;
+        box-shadow: 0 3px 16px rgba(0,0,0,0.12);
+        padding: 10px 20px;
+        font-size: 10px;
+        cursor: pointer;
+        @media screen and (min-width: 1440px) {
+            width: 200px;
+            padding: 20px 60px;
+            font-size: 15px;
+        }
+    }
+}
+.comunity{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    .text-content h1{
+        font-size: 28px;
+        margin-bottom: 30px;
+        font-family: $font_family-2;
+        font-weight: 600;
+    }
+    .text-content p{
+        line-height: 1.5;
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+    .text-content button{
+        width: 225px;
+        height: 45px;
+        color: #ffffff;
+        background-color: $Pink;
+        padding: 15px 50px;
+        margin-bottom: 40px;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+    }
+    @media screen and (min-width: 768px) {
+        .img{
+            // text-align: center;
+            margin: 0 auto;
+            height: 250px;
+        }
+    }
+    @media screen and (min-width: 1440px) {
+        text-align: left;
+        flex-direction: row;
+        justify-content: space-between;
+        // align-items: center;
+        .text-content{
+            width: 500px;
+        }
+        .text-content h1{
+            margin-top: 50px;
+            font-size: 38px;
+            margin-bottom: 45px;
+        }
+        .text-content p{
+            line-height: 2;
+            font-size: 17px;
+        }
+        .img{
+            height: 450px;
+            
+        }
+    }
+}
