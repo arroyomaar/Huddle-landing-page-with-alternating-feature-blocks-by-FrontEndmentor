@@ -41,8 +41,32 @@ main{
     .hero {
         margin-bottom: 30px;
     }
-    @media screen and (min-width: 1240px) {
-        width: 1240px;
+    @media screen and (min-width: 1024px) {
+        width: 75%;
+        height: 445px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding: 35px 35px 35px 90px;
+        .text{
+            width: 400px;
+        }
+        .text h2{
+            font-family: $font_family-2;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+        .text p{
+            line-height: 1.8;
+        }
+        .hero {
+            width: 330px;
+            // margin-left: 150px;
+        }
+    }
+    @media screen and (min-width: 1440px) {
+        width: 1200px;
         height: 445px;
         flex-direction: row;
         justify-content: space-between;
